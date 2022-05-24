@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Tables</title>
+
+    <!-- css part for tables topic  -->
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<!-- List -->
+    <!--There are three types of list OrderedList,UnorderedlList and descriptionList -->
+
+    <!--UnOrederedList -->
+    <h3>UnOrederedList</h3>
+    <ul>
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ul>
+
+    <!-- Types of attributes in UnOrderedList  -->
+    <ul type="square">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ul>
+
+    <ul style="list-style-type:circle">     <!--try this format also-->
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ul>
+
+    <ul type="disc">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ul>
+
+    <h3>Expand line height in a list:</h3>
+    <ul style="line-height:200%">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h3>A list inside another list</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+
+    <!-- OrederedList -->
+    <h3>OrederedList</h3>
+    <ol>
+        <li>This is my 1st item of orderdList</li>      <!--where li means list-->
+        <li>This is my 2nt item of orderdList</li>
+        <li>This is my 3rt item of orderdList</li>
+    </ol>
+
+    <!-- Types of attributes in OrderedList  -->
+    <ol type="A">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ol>
+
+    <ol type="a">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ol>
+
+    <ol type="I">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ol>
+
+    <ol type="i">
+        <li>This is my 1st item of unorderdList</li>
+        <li>This is my 2nt item of unorderdList</li>
+        <li>This is my 3rt item of unorderdList</li>
+    </ol>
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- DescriptionList -
+         where dl=define a description list, dt=Defines a term in a description list and dd=Describes the term in a description list -->
+    <h3>DescriptionList</h3>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <!-- Tables -->
+    <!-- Inside <table> contain two things 1st is <thead>=table_head and 2nd is <tbody>=table_body -->
+
+    <h3>TABLES IN HTML</h3>
+
+    <table>        <!-- <table style="width:100%"> -->
+
+        <!-- caption and colgroup for designing -->
+        <caption>Sofwtare Team</caption>       <!--extra thing to make table look good -->
+        <colgroup>                             <!--<colgroup>for adding colour in table -->
+            <col span="1" style="background-color:rgb(255, 112, 112)">
+            <col style="background-color:rgb(245, 245, 126)">
+            <col style="background-color:rgb(175, 146, 255)">
+          </colgroup>
+
+        <thead>
+            <!-- tr=table_rows , td=table_data , th=table_header -->
+            <tr>
+                <th>Name</th>
+                <th>profile</th>
+                <th>number</th>
+            </tr>
+        </thead>
+
+        <tbody>      <!-- <tbody style="text-align:center"> -->
+            <tr>
+                <td>Suraj</td>
+                <td>Android Developer</td>
+                <td>9876543210</td>
+            </tr>
+            <tr>
+                <td>Swapnil</td>
+                <td>Larawel Developer</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>Shailesh</td>
+                <td>CEO</td>
+                <td>1029384756 </td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot is work similar to tbody tag -->
+        <tfoot>
+            <tr>
+                <td>Priyanka</td>
+                <td>Technical support</td>
+                <td>9876345210</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

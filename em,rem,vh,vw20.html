@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* The full form of VH is viewport height. It works like the percentage unit as well. Specifying 10vh is equivalent to occupying 10% of entire visible screen height. */
+            height: 100vh;   
+            /* The full form of VW is viewport width. It works like the percentage unit. Specifying 10vw is equivalent to occupying 10% of entire visible screen width. */
+            width: 100vw;
+
+            font-size: 10px;
+            border :2px solid red;
+        }
+    h1{
+        text-align: center;
+    }
+    #first{
+    /* The EM unit is the same as the REM unit but it depends on the parent font size.     */
+        font-size: 4em;
+        padding: 3em; 
+
+    }
+    #second{
+    /* The default font-size of the root element [in HTML] is 16px. So, 1 REM = 16px.
+    If we write 3 rem, it will show us [ 3*16px = 48px ]. So as you can see, it works like a multiplier. */
+        /* font-size: 3rem;*/
+        padding: 2rem; 
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

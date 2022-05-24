@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders and Backgrounds</title>
+    <style>
+        #firstParagraph {
+            background-color: rgb(105, 188, 255);
+            height: 100px;          /* height for <p> block */
+            width: 455px;           /* width for <p> block */
+            border-radius: 11px;    /* to give curve  */
+
+        /*border: 4px solid Ogreen; //i can write all down line in 1 line also like this*/
+            border-style: solid;    /* by default border - style ka color black hota h  */
+            border-color: green;  /* to give color to border style */
+            border-width: 4px;      /* width for border style */
+        }
+
+        /* giving different color to all 4 sides of border */
+        #secondParagraph {
+            background-color: rgb(105, 188, 255);
+            height: 100px;          
+            width: 455px;           
+            /* giving different colors to all sides */
+            border-top: 2px solid violet;
+            border-right: 2px solid yellow;
+            border-bottom: 2px solid peru;
+            border-left: 2px solid seagreen;
+            /* giving curve radius to some corner only not for all corner */
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        /* Adding background images but it will display img multiple times */
+        #thirdParagraph{            
+            height: 1100px;          
+            width: 2000px; 
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+        }
+
+        /* Adding background images but it will display img multiple times in horizontal direction only */
+        #fourthParagraph{            
+            height: 500px;          
+            width: 2000px; 
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+            background-repeat: repeat-x;   /* print images repeatly horizontally */
+        }
+        /* Adding background images but it will display img multiple times in vertically direction only */
+        #FifthParagraph{            
+            height: 1000px;          
+            width: 800px; 
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+            background-repeat: repeat-y;   /* print images repeatly vertically */
+        }
+        /* Adding background images but this time it will not repeat */
+        #sixthParagraph{            
+            height: 500px;          
+            width: 800px; 
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+            background-repeat: no-repeat;   /* print images repeatly vertically */
+            background-position: center center ;
+            background-position: center top ;
+            /* margin: auto;    //use to make any thing in center position  */
+        }
+        /* image positioning example*/
+        #seventhParagraph{            
+            height: 1000px;          
+            width: 1000px; 
+            border: 2px solid red;
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+            background-repeat: no-repeat;   /* print images repeatly vertically */
+            /* background-position: center center ;
+            background-position: center top ; */
+        }
+        /* image positioning to seventhposition*/
+        #eightParagraph{            
+            height: 1000px;          
+            width: 1000px; 
+            border: 2px solid red;
+            background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg');    
+            background-repeat: no-repeat;   /* print images repeatly vertically */
+            background-position: center center ;
+            /* background-position: center top ;  */
+            /* background-position: center left ;  */
+            /* background-position: center right ;  */
+            /* background-position: center bottom ;  */
+            /* background-position: top left ;  */
+            /* background-position: bottom right ;  */
+            /* background-position: 20px center ; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="firstParagraph">This is my First paragraph</p>
+    <p id="secondParagraph">&nbsp;&nbsp;&nbsp;This is my Second paragraph</p>
+    <p id="thirdParagraph">This is my Third paragraph</p>
+    <p id="fourthParagraph">This is my Fourth paragraph</p>
+    <p id="FifthParagraph">This is my Fifth paragraph</p>
+    <p id="sixthParagraph">This is my sixth paragraph</p>
+    <p id="seventhParagraph">This is my seventh paragraph</p>
+    <p id="eightParagraph">This is my eight paragraph</p>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms & Input Tags</title>
+</head>
+
+<body>
+
+  <h3>Input types in Html</h3>
+
+  <!-- notes :- The default value of the input type attribute is "text" -->
+  button: <input type="button" value="button"> <br>
+  checkbox: <input type="checkbox"> <br>
+  color: <input type="color"> <br>
+  date: <input type="date"> <br>
+  datetime-local: <input type="datetime-local"> <br>
+  email: <input type="email"> <br>
+  file: <input type="file"> <br>
+  hidden: <input type="hidden"> <br>
+  image: <input type="image"> <br>
+  month: <input type="month"> <br>
+  number: <input type="number"> <br>
+  password: <input type="password"> <br>
+  radio: <input type="radio"> <br>
+  range: <input type="range"> <br>
+  search: <input type="search"> <br>
+  submit: <input type="submit"> <br>
+  tel: <input type="tel"> <br>
+  text: <input type="text"> <br>
+  time: <input type="time"> <br>
+  url: <input type="url"> <br>
+  week: <input type="week"> <br>
+  reset: <input type="reset"> <br>
+
+  <hr>
+
+  <h3>Form in html to store the data in backend</h3>
+  <!-- if user fill the details and we want to store her/his data in backend for that we have to use <form> tags -->
+  <form action="backend.php">
+    <!--here i am defining that user details will be going to be stored in php as a backend -->
+
+    <div>
+      <!-- <br> and <div> both works similarly -->
+      Name :<input type="text" name="user_name">
+    </div>
+    <br>
+    <div>
+      Email:<input type="email" name="user_mail">
+    </div>
+    <br>
+    <div>
+      Write about yourself : <br><textarea name="user_textarea" cols="50" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+      Gender: Male <input type="radio" name="user_gender"> Female <input type="radio" name="user_gender">
+      <!-- for selecting any one radio we have to give similar name to both -->
+    </div>
+    <br>
+    <div>
+      <input type="Submit" value="submit now">
+      if we click on submit it will store the data in backend.php as we defind earlier in <form> tags
+    </div>
+    <br>
+    <div>
+      <input type="reset" value="reset now">
+    </div>
+  </form>
+
+  <hr>
+  <h3>Label Tag</h3>
+  <!-- Very important always use label while creating forms -->
+  Label tag is use if we click on username it will automatically redirect us to write name in box.<br>
+  <!-- Remember value of id and for should be same  -->
+  <label for="name">UserName</label>
+  <input type="text" name="user_name" id="name">
+
+  <hr>
+  <h3>Select Tag</h3>
+  <!-- Select tags -->
+  Countries
+  <select name="Countries" id="country">
+    <option value="pak">Pakistan</option>
+    <option value="ind" selected>India</option>
+    <option value="eng">England</option>
+    <option value="aus">Australia</option>
+    <option value="afr">Africa</option>
+    <option value="wi">WestIndies</option>
+  </select>
+
+  <hr>
+
+  <h3>EXAMPLE WITH PROPER FORMAT </h3>
+  <form action="/mybackendfilename.php">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname"><br><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname"><br><br>
+
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd"><br><br>
+
+    <p>Choose your favorite Web Language :</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br><br>
+
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br>
+
+    <p>I have a bike</p>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label> <br><br>
+
+    <input type="submit" onclick="alert('Submitted!')" value="Submit">&nbsp;&nbsp;&nbsp;
+    <input type="reset" onclick="alert('Reset Successfully!')">
+  </form>
+
+  <!-- Here is a list of some common input restrictions:
+
+  • checked = Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+
+  • disabled = Specifies that an input field should be disabled
+
+  • max = Specifies the maximum value for an input field
+
+  • maxlength = Specifies the maximum number of character for an input field
+
+  • min = Specifies the minimum value for an input field
+
+  • pattern = Specifies a regular expression to check the input value against
+
+  • readonly = Specifies that an input field is read only (cannot be changed)
+
+  • required = Specifies that an input field is required (must be filled out)
+
+  • size = Specifies the width (in characters) of an input field
+
+  • step = Specifies the legal number intervals for an input field
+
+  • value = Specifies the default value for an input field  -->
+
+</body>
+
+</html>

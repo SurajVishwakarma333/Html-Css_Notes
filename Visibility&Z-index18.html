@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility&Z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1 {
+            background-color: greenyellow;
+        }
+        #box2 {
+        /* Topic: Visibility
+            visibility: hidden;  //this will only hide the box but its allocate space will be there only
+            //so to make hidden + remove the space also we have attribute :
+            display:none;
+            visibility: visible;
+            visibility: collapse;
+            visibility: inherit;
+            visibility: initial;
+            visibility: unset; */
+            background-color: rebeccapurple;
+        }
+        #box3 {
+            background-color: lightcoral;
+        }
+        
+        /* Z-index example */
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            /* z-index: 1;   //try using this */
+        }
+        .heading{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+        
+<h1 class="heading">The z-index Property</h1>
+<img src="goku.jpg" width="100" height="140">
+<p style="color: rgb(224, 6, 6);">Because the image has a z-index of -1, it will be placed behind the heading.</p>
+<br>
+<br>
+<br>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+ 
+</body>
+</html>

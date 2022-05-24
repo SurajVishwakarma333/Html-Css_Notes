@@ -1,0 +1,131 @@
+CSS @keyframes Rule
+<br>
+
+<!-- Definition and Usage of keyframe :
+• The @keyframes rule specifies the animation code.
+• The animation is created by gradually changing from one set of CSS styles to another.
+• During the animation, you can change the set of CSS styles many times.
+• Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete. 
+Syntax : @keyframes animationname {keyframes-selector {css-styles;}}
+
+Property Values :
+
+   Value	                    Description
+
+•   animationname	            Required. Defines the name of the animation.
+
+•   keyframes-selector	        Required. Percentage of the animation duration.
+                                Legal values:
+                                0-100%
+                                from (same as 0%)
+                                to (same as 100%)
+                                Note: You can have many keyframes-selectors in one animation.
+
+•   css-styles	                Required. One or more legal CSS style properties
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 1. Make an element move gradually 200px down:
+Example:-
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: Suraj 5s infinite;
+}
+
+@keyframes Suraj {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+
+<div></div> -->
+
+<!-- 2. Add many keyframe selectors in one animation:
+    <style> 
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 5s infinite;
+    }
+    
+    @keyframes mymove {
+      0%   {top: 0px;}
+      25%  {top: 200px;}
+      75%  {top: 50px}
+      100% {top: 100px;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>The @keyframes Rule</h1>
+    
+    <div></div> -->
+    
+
+
+<!-- 3. Change many CSS styles in one animation:
+
+<style> 
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 5s infinite;
+    }
+    
+    @keyframes mymove {
+      0%   {top: 0px; background: red; width: 100px;}
+      100% {top: 200px; background: yellow; width: 300px;}
+    }
+    </style>
+    </head>
+    <body>
+     
+    <div></div> -->
+
+<!-- 4.  Many keyframe selectors with many CSS styles:
+    <style> 
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 5s infinite;
+    }
+    
+    @keyframes mymove {
+      0%   {top: 0px; left: 0px; background: red;}
+      25%  {top: 0px; left: 100px; background: blue;}
+      50%  {top: 100px; left: 100px; background: yellow;}
+      75%  {top: 100px; left: 0px; background: green;}
+      100% {top: 0px; left: 0px; background: red;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>The @keyframes Rule</h1>
+    
+    <div></div>     -->
+    
+
+</body>
+</html>

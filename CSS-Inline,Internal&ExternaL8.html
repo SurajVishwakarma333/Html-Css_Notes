@@ -1,0 +1,171 @@
+• CSS stands for Cascading Style Sheet.
+    CSS contains three parameters
+    1.Selector
+    2.Property
+    3.Value
+
+    Syntax:
+    • p { color : red; } //where p is Selector means to whom i have to apply css, color is Property means what i have to
+    apply in css and red is Value means set this in my markup(html code) through css.
+    • p , h1{
+    background-color : red ;
+    border-radius : 3px;
+    }
+
+    Q. WHAT IS A SELECTOR IN CSS ?
+
+    •CSS selectors are used to find the element whose property will be set.
+    •Selectors are used to target the html elements.
+    •Selectors makes it easy for us to easily target single/multiple HTML elements in the markup.
+    EXAMPLE:- p { color : red; } //where p is Selector
+
+    4 TYPES OF BASIC CSS SELECTORS :
+
+    1. CSS element Selector = means simple css.
+     example:-
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <title>Document</title>
+        <style>
+            p{
+            color: red;
+            }
+        </style>
+     </head>
+     <body>
+        <p>This is a simple paragraph to demonstrate css selectors</p>
+        <p>This is a another simple paragraph to demonstrate css selectors</p>
+        <div>
+            <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        </div>
+     </body>
+     </html> 
+
+
+    2.CSS id Selector = means selecting particular tags with unique id.
+    example:-
+    <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <title>Document</title>
+        <style>
+            #paragraph2{                 /* # refers to id */
+                color: red;
+            }
+        </style>
+     </head>
+     <body>
+        <p>This is a simple paragraph to demonstrate css selectors</p>
+        <p id="paragraph2">This is a another simple paragraph to demonstrate css selectors</p>
+        <div>
+            <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        </div>
+     </body>
+     </html>
+
+    3.CSS class Selector = means selecting tags with class.
+     example:-
+    <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <title>Document</title>
+        <style>
+            .redElement{                /* .refers to class */       
+                color: yellow;
+            }
+        </style>
+     </head>
+     <body>
+        <p class="paragraph1">This is a simple paragraph to demonstrate css selectors</p>
+        <p> This is a another simple paragraph to demonstrate css selectors</p>
+        <div>
+            <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        </div>
+     </body>
+     </html>
+
+    4.The CSS grouping Selector = selecting two or more tags and applying css
+
+    <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <title>Document</title>
+        <style>
+            p,div{                /* adding 2 tags */       
+                background-color: violet;
+            }
+        </style>
+     </head>
+     <body>
+        <p>This is a simple paragraph to demonstrate css selectors</p>
+        <div>
+            <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        </div>
+     </body>
+     </html>
+
+        
+    There are Three Ways to Insert CSS :-
+
+    1. Inline CSS -
+    
+    <!DOCTYPE html>
+    <html>
+        <head></head>
+    <body>
+        <h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <p style="color:red;">This is a paragraph.</p>
+    </body>
+    </html>
+
+    2. Internal CSS -
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                background-color: linen;
+            }
+            h1 {
+                color: maroon;
+                margin-left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Inserted Internal CSS inside head tag with the help of style tag.</p>
+    </body>
+    </html>
+
+    3. External CSS -
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="suraj.css">
+    </head>
+    <body>
+        <p> Inserted External CSS inside head tag with the help of link tag.</p>
+    </body>
+    </html>
+
+
+    Q1. what if i give background-color = red in inline css and give background-color = yellow in Internal css in same .html file. Which color it should print. ?
+    ANS = Inline should be given to be first priority.
+          It should print background-color = red.
+
+    Q2. what if i give background-color = red in Internal CSS and background-color = yellow in External CSS. Which color it should print. ?
+    ANS = Jo last mai hoga means end mai usi ko 1st priority diya jayega Internal & External ke bich mai.
+
+    NOTES :- we have important attribute also., Values defined as Important will have the highest priority.     
+    EXAMPLE = 
+    <link rel=""stylesheet> href="suraj.css"   //in this .css file i given background-color:yellow;
+    p{
+      background-color:red !important;       //here i define important it will print this color
+    }
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 4px solid rgb(0, 0, 0);
+            margin: auto;
+            width: 1200px;
+        }
+        .logo{
+            border-radius: 33px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 34px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Display Property :- The display property specifies the display behavior (the type of rendering box) of an element.
+        Use of some different display values:
+        
+        p.ex1 {display: none;}  
+        p.ex2 {display: inline;}
+        p.ex3 {display: block;}
+        p.ex4 {display: inline-block;} -->
+
+    <!-- Value	                       Description        
+    •    inline	                      : Displays an element as an inline element (like <span>). Any height and width properties will have no effect.	
+    •    block	                      : Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.	
+    •    contents	                  : Makes the container disappear, making the child elements children of the element the next level up in the DOM.	
+    •    flex	                      : Displays an element as a block-level flex container.	
+    •    grid	                      : Displays an element as a block-level grid container.	
+    •    inline-block	              : Displays an element as an inline-level block container. The element itself is formatted as an inline element but you can apply height and width values	
+    •    inline-flex	              : Displays an element as an inline-level flex container.	
+    •    inline-grid	              : Displays an element as an inline-level grid container.	
+    •    inline-table	              : The element is displayed as an inline-level table.	
+    •    list-item	                  : Let the element behave like a <li> element.	
+    •    run-in	                      : Displays an element as either block or inline, depending on context.	
+    •    table	                      : Let the element behave like a <table> element.	
+    •    table-caption	              : Let the element behave like a <caption> element.	
+    •    table-column-group	          : Let the element behave like a <colgroup> element.	
+    •    table-header-group	          : Let the element behave like a <thead> element.	
+    •    table-footer-group	          : Let the element behave like a <tfoot> element.	
+    •    table-row-group	          : Let the element behave like a <tbody> element.	
+    •    table-cell	                  : Let the element behave like a <td> element.	
+    •    table-column	              : Let the element behave like a <col> element.	
+    •    table-row	                  : Let the element behave like a <tr> element.	
+    •    none	                      : The element is completely removed.	
+    •    initial	                  : Sets this property to its default value. Read about initial.	
+    •    inherit	                  : Inherits this property from its parent element. Read about inherit.     -->
+
+    <header class="top">
+        <img class="logo" src="goku.jpg" alt="not loaded!">
+        <h3>Welcome to Suraj's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">SUN</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">JUPYTER</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">SATURN</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+    </div>
+</body>
+</html>
+    
+
+<!-- Example of all types of display property :
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        p {color: red;}
+
+        p.para1 {display: none;}
+        p.para2 {display: inline;}
+        p.para3 {display: block;}
+        p.para4 {display: inline-block;}
+        </style>
+        </head>
+        <body>
+        <h1>The display Property</h1>
+
+        <h2>display: none:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        <h2>display: inline-block:</h2>
+        <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="para4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </div>
+
+        </body>
+        </html> 
+-->
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning-Absolute and Relative </title>
+    <style>
+
+        .container{
+            border: 2px solid black;
+            background-color: rgb(174, 252, 255);
+            height: 3444px;
+        }
+        
+    .box{
+        display: inline-block;
+        border: 2px solid rgb(81, 0, 173);
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+    #box3{
+
+        /* CSS Position: There are five different position values- static (default), relative, absolute, fixed, and sticky. 
+        
+    All CSS Positioning Properties:-
+
+        Property	         Description
+    •    bottom	            : Sets the bottom margin edge for a positioned box
+    •    clip	            : Clips an absolutely positioned element
+    •    left	            : Sets the left margin edge for a positioned box
+    •    position	        : Specifies the type of positioning for an element
+    •    right	            : Sets the right margin edge for a positioned box
+    •    top	            : Sets the top margin edge for a positioned box  */
+
+        /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position
+           position: relative;
+           top: 34px;
+           left: 134px; */ 
+        
+        /* absolute: Positions the element relative to the positon of its first parent
+           position: absolute; */
+
+        /* fixed: Positions the element relative to the browser window; 
+            position: fixed;
+            right: 4px;
+            bottom: 2px */
+
+        /* sticky: Positions the element relative to the users scroll position */
+        
+        position: sticky;
+        top: 3px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
